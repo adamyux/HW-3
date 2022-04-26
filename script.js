@@ -7,7 +7,10 @@ function mysquareFunction() {
 document.addEventListener("DOMContentLoaded", function (event) {
   //define an array
   const origArray = [2,3,4];
-
+  document.getElementById("output1").value = origArray[0];
+  document.getElementById("output2").value = origArray[1];
+  document.getElementById("output3").value = origArray[2];
+  
   document.getElementById("cube").addEventListener("click", function () {
     //pass a function to map
     let x = origArray.map(x => x * x * x);
